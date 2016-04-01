@@ -6,8 +6,13 @@ configatron.prerelease_checklist_items = [
 # The directory where all distributed docs are.  Default is '.'
 # configatron.base_docs_dir = '.'
 
+def build_method
+  command("ls -al")
+end
+
 # The command that builds the sdk.  Required.
-configatron.build_method = 'ls -al'
+configatron.build_method = method(:build_method)
+
 
 def publish_to_package_manager(version)
   sleep 1
