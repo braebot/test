@@ -33,5 +33,17 @@ configatron.downstream_repos = [
     files_to_copy=[],    
     post_copy_methods=[],
     build_methods=[]
+  ),
+  DownstreamRepo.new(
+    name="test-downstream2",
+    url="git@github.com:braebot/test-downstream.git",
+    branch="master",
+    # ignored if new_branch_prefix is set
+    release_to_github=false,
+    files_to_copy=[],
+    post_copy_methods=[],
+    build_methods=[],
+    # if specified, create a new branch with the specified prefix, rather than tagging
+    new_branch_prefix="test-release-"
   )
 ]
