@@ -43,7 +43,7 @@ configatron.downstream_repos = [
     files_to_copy=[],
     post_copy_methods=[],
     build_methods=[],
-    # if specified, create a new branch with the specified prefix, rather than tagging
-    new_branch_prefix="test-release-"
+    # if specified, create a new branch with the specified name, rather than tagging
+    new_branch_name="test-release-__VERSION__"
   )
 ]
