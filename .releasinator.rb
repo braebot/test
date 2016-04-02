@@ -27,7 +27,7 @@ configatron.publish_to_package_manager_method = method(:publish_to_package_manag
 configatron.downstream_repos = [
   DownstreamRepo.new(
     name="test-downstream",
-    url="https://github.com/braebot/test-downstream.git",
+    url="git@github.com:braebot/test-downstream.git",
     branch="master",
     release_to_github=true,
     files_to_copy=[],    
