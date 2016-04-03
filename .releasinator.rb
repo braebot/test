@@ -22,6 +22,9 @@ end
 # The method that publishes the sdk to the package manager.  Required.
 configatron.publish_to_package_manager_method = method(:publish_to_package_manager)
 
+# Whether to publish the root repo to GitHub.  Required.
+configatron.release_to_github = true
+
 
 # Distribution GitHub repo if different from the source repo. Optional.
 configatron.downstream_repos = [
