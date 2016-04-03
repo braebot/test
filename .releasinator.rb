@@ -30,7 +30,7 @@ configatron.release_to_github = true
 configatron.downstream_repos = [
   DownstreamRepo.new(
     name="test-downstream",
-    url="git@github.paypal.com:SDK-R/PayPal-Android-SDK.git",
+    url="git@github.paypal.com:jbrateman/test-paypal.git",
     branch="master",
     release_to_github=true,
     files_to_copy=[],    
