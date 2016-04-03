@@ -27,23 +27,20 @@ configatron.publish_to_package_manager_method = method(:publish_to_package_manag
 # Whether to publish the root repo to GitHub.  Required.
 configatron.release_to_github = true
 
-
 # Distribution GitHub repo if different from the source repo. Optional.
 configatron.downstream_repos = [
   DownstreamRepo.new(
     name="test-downstream",
     url="git@github.paypal.com:jbrateman/test-paypal.git",
     branch="master",
-    release_to_github=true
+
+    :release_to_github => true
   ),
   DownstreamRepo.new(
     name="test-downstream2",
     url="git@github.com:braebot/test-downstream.git",
     branch="master",
-    # ignored if new_branch_prefix is set
-    release_to_github=false,
-
-    # if specified, create a new branch with the specified name, rather than tagging
+    # create a new branch with the specified name, rather than tagging
     :new_branch_name => "test-release-__VERSION__"
   )
 ]
