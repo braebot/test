@@ -34,10 +34,7 @@ configatron.downstream_repos = [
     name="test-downstream",
     url="git@github.paypal.com:jbrateman/test-paypal.git",
     branch="master",
-    release_to_github=true,
-    files_to_copy=[],    
-    post_copy_methods=[],
-    build_methods=[]
+    release_to_github=true
   ),
   DownstreamRepo.new(
     name="test-downstream2",
@@ -45,10 +42,8 @@ configatron.downstream_repos = [
     branch="master",
     # ignored if new_branch_prefix is set
     release_to_github=false,
-    files_to_copy=[],
-    post_copy_methods=[],
-    build_methods=[],
+
     # if specified, create a new branch with the specified name, rather than tagging
-    new_branch_name="test-release-__VERSION__"
+    :new_branch_name => "test-release-__VERSION__"
   )
 ]
