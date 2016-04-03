@@ -5,6 +5,8 @@ configatron.product_name = "test product"
 configatron.prerelease_checklist_items = [
 ]
 
+configatron.use_git_flow = true
+
 # The directory where all distributed docs are.  Default is '.'
 # configatron.base_docs_dir = '.'
 
