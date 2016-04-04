@@ -3,6 +3,7 @@ configatron.product_name = "test product"
 
 # List of items to confirm from the person releasing.  Required, but empty list is ok.
 configatron.prerelease_checklist_items = [
+  "Cross your t's and dot your ... lower case j's?"
 ]
 
 configatron.use_git_flow = true
