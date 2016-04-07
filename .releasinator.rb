@@ -18,7 +18,6 @@ end
 configatron.build_method = method(:build_method)
 
 def publish_to_package_manager(version)
-  sleep 1
   puts "done publishing yay!"
 end
 
@@ -45,3 +44,15 @@ configatron.downstream_repos = [
     :new_branch_name => "test-release-__VERSION__"
   )
 ]
+
+def build_docs
+  command("mkdir docs/")
+  command("date > docs/index.html")
+end
+
+configatron.doc_build_method = method(:build_docs)
+configatron.doc_target_dir = "downstream_repos/test-downstream"
+configatron.doc_files_to_copy = [
+  CopyFile.new("docs/index.html", ".", ".")
+]
+

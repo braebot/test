@@ -1,5 +1,9 @@
-PayPal Android SDK release notes
-================================
+Test SDK project changelog
+==========================
+
+3.0.7
+------
+* 3.0.7
 
 3.0.6
 ------
