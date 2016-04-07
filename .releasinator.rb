@@ -1,7 +1,6 @@
-
 configatron.product_name = "test product"
 
-# List of items to confirm from the person releasing.  Required, but empty list is ok.
+# List of items to confirm from the person releasing.
 configatron.prerelease_checklist_items = [
   "Cross your t's and dot your ... lower case j's?"
 ]
@@ -18,7 +17,6 @@ end
 # The command that builds the sdk.  Required.
 configatron.build_method = method(:build_method)
 
-
 def publish_to_package_manager(version)
   sleep 1
   puts "done publishing yay!"
@@ -33,16 +31,16 @@ configatron.release_to_github = true
 # Distribution GitHub repo if different from the source repo. Optional.
 configatron.downstream_repos = [
   DownstreamRepo.new(
-    name="test-downstream",
-    url="git@github.paypal.com:jbrateman/test-paypal.git",
-    branch="master",
+    "test-downstream",
+    "git@github.paypal.com:jbrateman/test-paypal.git",
+    "master",
 
     :release_to_github => true
   ),
   DownstreamRepo.new(
-    name="test-downstream2",
-    url="git@github.com:braebot/test-downstream.git",
-    branch="master",
+    "test-downstream2",
+    "git@github.com:braebot/test-downstream.git",
+    "master",
     # create a new branch with the specified name, rather than tagging
     :new_branch_name => "test-release-__VERSION__"
   )
