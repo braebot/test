@@ -46,11 +46,12 @@ configatron.downstream_repos = [
 ]
 
 def build_docs
-  command("echo date >> index.html")
+  command("mkdir docs/")
+  command("date > docs/index.html")
 end
 
 configatron.doc_build_method = method(:build_docs)
-configatron.doc_target_dir = "."
+configatron.doc_target_dir = "downstream_repos/test-downstream"
 configatron.doc_files_to_copy = [
   CopyFile.new("docs/index.html", ".", ".")
 ]
