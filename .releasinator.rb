@@ -30,14 +30,14 @@ configatron.release_to_github = true
 # Distribution GitHub repo if different from the source repo. Optional.
 configatron.downstream_repos = [
   DownstreamRepo.new(
-    "test-downstream",
+    "test-paypal",
     "git@github.paypal.com:jbrateman/test-paypal.git",
     "master",
 
     :release_to_github => true
   ),
   DownstreamRepo.new(
-    "test-downstream2",
+    "test-downstream",
     "git@github.com:braebot/test-downstream.git",
     "master",
     # create a new branch with the specified name, rather than tagging
