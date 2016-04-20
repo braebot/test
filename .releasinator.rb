@@ -11,7 +11,7 @@ configatron.use_git_flow = true
 # configatron.base_docs_dir = '.'
 
 def build_method
-  command("ls -al")
+  CommandProcessor.command("ls -al")
 end
 
 # The command that builds the sdk.  Required.
@@ -46,8 +46,8 @@ configatron.downstream_repos = [
 ]
 
 def build_docs
-  command("mkdir docs/")
-  command("date > docs/index.html")
+  CommandProcessor.command("mkdir docs/")
+  CommandProcessor.command("date > docs/index.html")
 end
 
 configatron.doc_build_method = method(:build_docs)
