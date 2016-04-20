@@ -2,6 +2,10 @@ Test SDK project changelog
 ==========================
 
 
+3.0.12
+------
+* Fixes bug in 3.0.11
+
 3.0.11
 ------
 * Fixes bug in 3.0.10
