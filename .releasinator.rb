@@ -51,8 +51,8 @@ configatron.downstream_repos = [
 ]
 
 def build_docs
-  CommandProcessor.command("mkdir docs/")
-  CommandProcessor.command("date > docs/index.html")
+  Dir.mkdir("docs") unless File.exists?("docs")
+  CommandProcessor.command("date >> docs/index.html")
 end
 
 configatron.doc_build_method = method(:build_docs)
