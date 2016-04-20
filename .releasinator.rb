@@ -11,7 +11,7 @@ configatron.use_git_flow = true
 # configatron.base_docs_dir = '.'
 
 def build_method
-  command("ls -al")
+  CommandProcessor.command("ls -al")
 end
 
 # The command that builds the sdk.  Required.
@@ -33,21 +33,26 @@ configatron.downstream_repos = [
     "test-paypal",
     "git@github.paypal.com:jbrateman/test-paypal.git",
     "master",
-
+    :files_to_copy => [
+      CopyFile.new("CHANGELOG.md", "CHANGELOG.md", ".")
+    ],
     :release_to_github => true
   ),
   DownstreamRepo.new(
     "test-downstream",
     "git@github.com:braebot/test-downstream.git",
     "master",
-    # create a new branch with the specified name, rather than tagging
+    # create a new branch with the specified name, rather than tagging   
+    :files_to_copy => [
+      CopyFile.new("CHANGELOG.md", "CHANGELOG.md", ".")
+    ],
     :new_branch_name => "test-release-__VERSION__"
   )
 ]
 
 def build_docs
-  command("mkdir docs/")
-  command("date > docs/index.html")
+  CommandProcessor.command("mkdir docs/")
+  CommandProcessor.command("date > docs/index.html")
 end
 
 configatron.doc_build_method = method(:build_docs)
