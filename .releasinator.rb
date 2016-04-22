@@ -20,9 +20,13 @@ configatron.build_method = method(:build_method)
 def publish_to_package_manager(version)
   puts "done publishing yay!"
 end
-
-# The method that publishes the sdk to the package manager.  Required.
 configatron.publish_to_package_manager_method = method(:publish_to_package_manager)
+
+
+def wait_for_package_manager(version)
+  puts "done waiting for package manager yay!"
+end
+configatron.wait_for_package_manager_method = method(:wait_for_package_manager)
 
 # Whether to publish the root repo to GitHub.  Required.
 configatron.release_to_github = true
