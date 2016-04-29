@@ -3,7 +3,7 @@ Test SDK project changelog
 
 3.0.17
 ------
-* BLAH17!
+* BLAH17! 
 
 3.0.16
 ------
