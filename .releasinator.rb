@@ -10,6 +10,19 @@ configatron.use_git_flow = true
 # The directory where all distributed docs are.  Default is '.'
 # configatron.base_docs_dir = '.'
 
+def validate_gpg
+  @validator.validate_in_path("gpg")
+end
+
+def validate_mvn
+  @validator.validate_in_path("mvn")
+end
+
+configatron.custom_validation_methods = [
+  method(:validate_gpg),
+  method(:validate_mvn)
+]
+
 def build_method
   CommandProcessor.command("ls -al")
 end
