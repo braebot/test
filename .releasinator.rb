@@ -1,3 +1,8 @@
+desc "Hi"
+task "validate:paths" do
+  puts "Hi. I just added stuff to validate:paths!"
+end
+
 configatron.product_name = "test product"
 
 # List of items to confirm from the person releasing.
@@ -8,7 +13,7 @@ configatron.prerelease_checklist_items = [
 configatron.use_git_flow = true
 
 # The directory where all distributed docs are.  Default is '.'
-# configatron.base_docs_dir = '.'
+configatron.base_docs_dir = 'sdk'
 
 def validate_gpg
   @validator.validate_in_path("gpg")
