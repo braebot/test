@@ -1,4 +1,3 @@
-desc "Hi"
 task "validate:paths" do
   puts "Hi. I just added stuff to validate:paths!"
 end
@@ -12,7 +11,7 @@ configatron.prerelease_checklist_items = [
 
 configatron.use_git_flow = true
 
-# The directory where all distributed docs are.  Default is '.'
+# The directory where all distributed docs are found.  If not specified, the default is `.`.
 configatron.base_docs_dir = 'sdk'
 
 def validate_gpg
@@ -23,6 +22,7 @@ def validate_mvn
   @validator.validate_in_path("mvn")
 end
 
+# List of methods that are run as a step within `validate:all`.  Optional.
 configatron.custom_validation_methods = [
   method(:validate_gpg),
   method(:validate_mvn)
