@@ -1,3 +1,7 @@
+task "validate:paths" do
+  puts "Hi. I just added stuff to validate:paths!"
+end
+
 configatron.product_name = "test product"
 
 # List of items to confirm from the person releasing.
@@ -7,8 +11,8 @@ configatron.prerelease_checklist_items = [
 
 configatron.use_git_flow = true
 
-# The directory where all distributed docs are.  Default is '.'
-# configatron.base_docs_dir = '.'
+# The directory where all distributed docs are found.  If not specified, the default is `.`.
+configatron.base_docs_dir = 'sdk'
 
 def validate_gpg
   @validator.validate_in_path("gpg")
@@ -18,6 +22,7 @@ def validate_mvn
   @validator.validate_in_path("mvn")
 end
 
+# List of methods that are run as a step within `validate:all`.  Optional.
 configatron.custom_validation_methods = [
   method(:validate_gpg),
   method(:validate_mvn)
@@ -51,7 +56,7 @@ configatron.downstream_repos = [
     "git@github.paypal.com:jbrateman/test-paypal.git",
     "master",
     :files_to_copy => [
-      CopyFile.new("CHANGELOG.md", "CHANGELOG.md", ".")
+      CopyFile.new("sdk/CHANGELOG.md", "CHANGELOG.md", ".")
     ],
     :release_to_github => true
   ),
@@ -61,7 +66,7 @@ configatron.downstream_repos = [
     "master",
     # create a new branch with the specified name, rather than tagging   
     :files_to_copy => [
-      CopyFile.new("CHANGELOG.md", "CHANGELOG.md", ".")
+      CopyFile.new("sdk/CHANGELOG.md", "CHANGELOG.md", ".")
     ],
     :new_branch_name => "test-release-__VERSION__"
   )
