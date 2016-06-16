@@ -56,7 +56,7 @@ configatron.downstream_repos = [
     "git@github.paypal.com:jbrateman/test-paypal.git",
     "master",
     :files_to_copy => [
-      CopyFile.new("CHANGELOG.md", "CHANGELOG.md", ".")
+      CopyFile.new("sdk/CHANGELOG.md", "CHANGELOG.md", ".")
     ],
     :release_to_github => true
   ),
@@ -66,7 +66,7 @@ configatron.downstream_repos = [
     "master",
     # create a new branch with the specified name, rather than tagging   
     :files_to_copy => [
-      CopyFile.new("CHANGELOG.md", "CHANGELOG.md", ".")
+      CopyFile.new("sdk/CHANGELOG.md", "CHANGELOG.md", ".")
     ],
     :new_branch_name => "test-release-__VERSION__"
   )
