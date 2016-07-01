@@ -1,6 +1,10 @@
 Test SDK project changelog
 ==========================
 
+3.0.36
+------
+* BLAH36!
+
 3.0.35
 ------
 * BLAH35!
@@ -75,7 +79,7 @@ Test SDK project changelog
 
 3.0.17
 ------
-* BLAH17! 
+* BLAH17!
 
 3.0.16
 ------
@@ -95,104 +99,104 @@ Test SDK project changelog
 
 3.0.12
 ------
-* Fixes bug in 3.0.11
+* Fixes bug in 3.0.11.
 
 3.0.11
 ------
-* Fixes bug in 3.0.10
+* Fixes bug in 3.0.10.
 
 3.0.10
 ------
-* Fixes bug in 3.0.9
+* Fixes bug in 3.0.9.
 
 3.0.9
 ------
-* 3.0.9
+* 3.0.9.
 
 3.0.8
 ------
-* 3.0.8
+* 3.0.8.
 
 3.0.7
 ------
-* 3.0.7
+* 3.0.7.
 
 3.0.6
 ------
-* 3.0.6
+* 3.0.6.
 
 3.0.5
 ------
-* 3.0.5
+* 3.0.5.
 
 3.0.4
 ------
-* 3.0.4
+* 3.0.4.
 
 3.0.3
 ------
-* 3.0.3
+* 3.0.3.
 
 3.0.2
 ------
-* 3.0.2
+* 3.0.2.
 
 3.0.1
 ------
-* 3.0.1
+* 3.0.1.
 
 3.0.0
 ------
-* 3.0.0 git flow
+* 3.0.0 git flow.
 
 2.14.12
 ------
-* 2.14.12
+* 2.14.12.
 
 2.14.11
 ------
-* 2.14.11
+* 2.14.11.
 
 2.14.10
 ------
-* 2.14.10
+* 2.14.10.
 
 2.14.9
 ------
-* 2.14.9
+* 2.14.9.
 
 2.14.8
 ------
-* 2.14.8
+* 2.14.8.
 
 2.14.7
 ------
-* 2.14.7
+* 2.14.7.
 
 2.14.6
 ------
-* 2.14.6
+* 2.14.6.
 
 2.14.5
 ------
-* 2.14.5
+* 2.14.5.
 
 2.14.4
 ------
-* 2.14.4
+* 2.14.4.
 
 2.14.3
 ------
-* 2.14.3
-* 2.14.3
-* 2.14.3
-* 2.14.3
-* 2.14.3
-* 2.14.3
+* 2.14.3.
+* 2.14.3.
+* 2.14.3.
+* 2.14.3.
+* 2.14.3.
+* 2.14.3.
 
 2.14.2
 ------
-* TEST TEST
+* TEST TEST.
 
 2.14.1
 ------
@@ -237,7 +241,7 @@ Test SDK project changelog
 
 2.12.3
 ------
-* SDK is now available at Maven Central [#14](https://github.com/paypal/PayPal-Android-SDK/issues/14) & [#208](https://github.com/paypal/PayPal-Android-SDK/issues/208)
+* SDK is now available at Maven Central [#14](https://github.com/paypal/PayPal-Android-SDK/issues/14) & [#208](https://github.com/paypal/PayPal-Android-SDK/issues/208):
 	* `com.paypal.sdk:paypal-android-sdk:2.12.3`.
 
 2.12.2
@@ -349,7 +353,7 @@ Test SDK project changelog
 
 2.8.8
 -----
-* Change "Send Payment" button to "Pay". (see https://github.com/paypal/PayPal-iOS-SDK/issues/174)
+* Change "Send Payment" button to "Pay". (see https://github.com/paypal/PayPal-iOS-SDK/issues/174).
 * Minor bug fixes.
 * Update card.io to 5.0.0.
 
@@ -428,7 +432,7 @@ Test SDK project changelog
 
 2.7.0
 -----
-* Add support for Russian Rubles. 
+* Add support for Russian Rubles.
 * Add gradle files to Sample App.
 * Minor fixes to the Consent Activity.
 
@@ -471,7 +475,7 @@ Test SDK project changelog
 
 2.5.1
 -----
-* Fix layout xml issue in SampleApp [#89](https://github.com/paypal/PayPal-Android-SDK/issues/89)
+* Fix layout xml issue in SampleApp [#89](https://github.com/paypal/PayPal-Android-SDK/issues/89).
 
 2.5.0
 -----
@@ -482,8 +486,8 @@ Test SDK project changelog
 2.4.0
 -----
 * Add [Profile Sharing](https://github.com/paypal/PayPal-Android-SDK/blob/master/docs/profile_sharing_mobile.md) feature.
-	* Developer selects requested account profile attributes
-	* User may consent to sharing the requested profile data
+	* Developer selects requested account profile attributes.
+	* User may consent to sharing the requested profile data.
 * Fix sluggish performance in Payment Method selection on devices with slower cameras (Nexus 10).
 * Fix issue [#77: Invalid path on some devices](https://github.com/paypal/PayPal-Android-SDK/issues/77).
 
@@ -514,7 +518,7 @@ Test SDK project changelog
 ----
 * Add user funding option selection.
 * Add app-controlled user shipping address selection (including support for the app to add a new shipping address).
-* Rename zh-Hant_HK -> zh-Hant so that HK is chosen by default for other regions
+* Rename zh-Hant_HK -> zh-Hant so that HK is chosen by default for other regions.
 
 2.2.2
 -----
@@ -531,7 +535,7 @@ Test SDK project changelog
 -----
 * Add support for multiple items per payment.
 * Update PayPal logo.
-* Update card.io library to 3.1.5.  
+* Update card.io library to 3.1.5.
 
 2.1.0
 -----
@@ -574,14 +578,14 @@ Test SDK project changelog
 
 1.2.6
 -----
-* Fix issue where PaymentActivity.EXTRA_DEFAULT_USER_EMAIL was not being handled properly in all cases [47](https://github.com/paypal/PayPal-Android-SDK/issues/47)
+* Fix issue where PaymentActivity.EXTRA_DEFAULT_USER_EMAIL was not being handled properly in all cases [47](https://github.com/paypal/PayPal-Android-SDK/issues/47).
 
 1.2.5
 -----
-* Refactor code to eliminate spurious error message in LogCat [40](https://github.com/paypal/PayPal-Android-SDK/issues/40)
-* Fix validation of PayPalPayment.shortDescription where some credit card payments caused incorrect JSONException [41](https://github.com/paypal/PayPal-Android-SDK/issues/41)
-* Eliminate source of potential NPE [37](https://github.com/paypal/PayPal-Android-SDK/issues/37)
-* Update card.io lib to 3.1.4 (includes fixes for potential NPEs)
+* Refactor code to eliminate spurious error message in LogCat [40](https://github.com/paypal/PayPal-Android-SDK/issues/40).
+* Fix validation of PayPalPayment.shortDescription where some credit card payments caused incorrect JSONException [41](https://github.com/paypal/PayPal-Android-SDK/issues/41).
+* Eliminate source of potential NPE [37](https://github.com/paypal/PayPal-Android-SDK/issues/37).
+* Update card.io lib to 3.1.4 (includes fixes for potential NPEs).
 
 1.2.4
 -----
@@ -594,12 +598,12 @@ Test SDK project changelog
 1.2.2
 -----
 * Fix login page layout issue [20](https://github.com/paypal/PayPal-Android-SDK/issues/20).
-* Add some login error logging
+* Add some login error logging.
 
 1.2.1
 -----
 * Update card.io library to 3.1.3.
-* Fix issue [#11: release/debug UI differences](https://github.com/paypal/PayPal-Android-SDK/issues/11)
+* Fix issue [#11: release/debug UI differences](https://github.com/paypal/PayPal-Android-SDK/issues/11).
 
 1.2.0
 -----
@@ -609,21 +613,21 @@ Test SDK project changelog
 
 1.1.2
 -----
-* Re-add `Version` class
-* Update card.io library to 3.1.1
+* Re-add `Version` class.
+* Update card.io library to 3.1.1.
 * Support all currencies that are currently accepted by the REST APIs.  See [README](README.md) for details.
-* Fix various localizations
-* Additional localization: ko (Korean)
+* Fix various localizations.
+* Additional localization: ko (Korean).
 * Minor UI cleanup (including [issue 4](https://github.com/paypal/PayPal-Android-SDK/issues/4)).
 
 1.1.1
 -----
-* Skipped
+* Skipped.
 
 1.1.0
 -----
-* Bug fixes
-* Update card.io to 3.1.0
+* Bug fixes.
+* Update card.io to 3.1.0.
 * Add translations of all strings into ~20 languages, in addition to American English.
     - Translation choice is controlled by `EXTRA_LANGUAGE_OR_LOCALE` in PaymentActivity.
     - The translations that a few developers had previously created for their own apps will no longer be used by the SDK.
