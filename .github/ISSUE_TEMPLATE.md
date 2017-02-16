@@ -1,3 +1,4 @@
+** General notice: if you have an API issue, see our [REST API Issues](https://github.com/paypal/PayPal-REST-API-Issues) repository, or contact [PayPal Tech Support](https://developer.paypal.com/support/). **
 ### General information
 
 * SDK version:
