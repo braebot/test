@@ -3,6 +3,7 @@
 
 * SDK version:
 * Mode. Either sandbox or live/production:
+* `PayPal-Debug-ID` values. If applicable, report debug IDs from any logs:
 * Android Version and Device (Motorola Droid Razr Maxx with Android 4.4.2, Samsung S7 with Android 6.0, etc...):
 
 ### Issue description
