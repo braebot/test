@@ -2,7 +2,7 @@
 
 * SDK version:
 * Mode. Either sandbox or live/production:
-* iOS Version and Device (iOS 8.x, iOS 9.3 on an iPhone 6s, etc.):
+* Android Version and Device (Motorola Droid Razr Maxx with Android 4.4.2, Samsung S7 with Android 6.0, etc...):
 
 ### Issue description
 
