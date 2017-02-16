@@ -1,11 +1,8 @@
-ios
-** General notice: if you have an API issue, see our [REST API Issues](https://github.com/paypal/PayPal-REST-API-Issues) repository, or contact [Braintree/PayPal Tech Support](TODO Add relevant link). **
 ### General information
 
-* Mode. Either sandbox or live/production:
-* `PayPal-Debug-ID` values. If applicable, report debug IDs from any logs:
-* Language and version of language used:
 * SDK version:
+* Mode. Either sandbox or live/production:
+* iOS Version and Device (iOS 8.x, iOS 9.3 on an iPhone 6s, etc.):
 
 ### Issue description
 
