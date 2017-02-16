@@ -2,7 +2,6 @@
 ### General information
 
 * SDK version:
-* Mode. Either sandbox or live/production:
 * Android Version and Device (Motorola Droid Razr Maxx with Android 4.4.2, Samsung S7 with Android 6.0, etc...):
 
 ### Issue description
